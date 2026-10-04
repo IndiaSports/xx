@@ -1,119 +1,577 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max-Density Fast Follow Dashboard</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #fafafa; margin: 0; padding: 10px; }
-        .grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; max-width: 100%; }
-        .btn { display: block; background: #fff; color: #262626; text-decoration: none; padding: 6px 4px; border: 1px solid #dbdbdb; border-radius: 4px; font-size: 12px; font-weight: 600; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .btn:hover { background: #0095f6; color: #fff; border-color: #0095f6; }
-        .btn:visited { background: #f1f1f1; color: #8e8e8e; font-weight: 400; }
-        @official_media (max-width: 900px) { .grid { grid-template-columns: repeat(3, 1fr); } }
-        @official_media (max-width: 600px) { .grid { grid-template-columns: repeat(2, 1fr); } }
-    </style></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>USDT Live Balance Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+    }
 
-    <div class="grid">
-        <!-- Pure Tripled Names (100 High Density Links) -->
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_afiyaaa">@official_afiyaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_zaraaa">@official_zaraaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_ayattt">@official_ayattt</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_mirzaaa">@official_mirzaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_alizaaa">@official_alizaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_anabiaaa">@official_anabiaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_ayraaa">@official_ayraaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_inayaaa">@official_inayaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_inshaaa">@official_inshaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_mirhaaa">@official_mirhaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_myraaa">@official_myraaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_nairaaa">@official_nairaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_zoyaaa">@official_zoyaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_aizaaa">@official_aizaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_amraaa">@official_amraaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_arfaaa">@official_arfaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_asraaa">@official_asraaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_duaaa">@official_duaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_elmaaa">@official_elmaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_elyaaa">@official_elyaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_erinaaa">@official_erinaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_ezraaa">@official_ezraaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_fizaaa">@official_fizaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_hibaaa">@official_hibaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_hiyaaa">@official_hiyaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_iraaa">@official_iraaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_izaaa">@official_izaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_jiyaaa">@official_jiyaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_lanaaa">@official_lanaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_mahiii">@official_mahiii</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_mehrrr">@official_mehrrr</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_mieshaaa">@official_mieshaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_riaaa">@official_riaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_rizaaa">@official_rizaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_saraaa">@official_saraaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_sanaaa">@official_sanaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_taraaa">@official_taraaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_ziyaaa">@official_ziyaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_ailaaa">@official_ailaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_alinaaa">@official_alinaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_aminaaa">@official_aminaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_arishaaa">@official_arishaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_barkhaaa">@official_barkhaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_eshalal">@official_eshalal</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_falishaaa">@official_falishaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_hooriyaaa">@official_hooriyaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_jannattt">@official_jannattt</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_mehekkk">@official_mehekkk</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_mishalal">@official_mishalal</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_naazzz">@official_naazzz</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_nidaaa">@official_nidaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_rayannn">@official_rayannn</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_ridaaa">@official_ridaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_ruhaniii">@official_ruhaniii</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_safaaa">@official_safaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_seherrr">@official_seherrr</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_shazaaa">@official_shazaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_yasminnn">@official_yasminnn hover</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_zunairaaa">@official_zunairaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_adaraaa">@official_adaraaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_aleenaaa">@official_aleenaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_amaraaa">@official_amaraaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_anammm">@official_anammm</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_arshiaaa">@official_arshiaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_danseennn">@official_danseennn</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_elizaaa">@official_elizaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_falakkk">@official_falakkk</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_hareemmm">@official_hareemmm</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_humairaaa">@official_humairaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_imannn">@official_imannn</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_inaraaa">@official_inaraaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_irshikaaa">@official_irshikaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_kinzaaa">@official_kinzaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_liyanaaa">@official_liyanaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_mahiraaa">@official_mahiraaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_mehvishhh">@official_mehvishhh</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_nishaaa">@official_nishaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_raniaaa">@official_raniaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_rubaaa">@official_rubaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_sadiaaa">@official_sadiaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_samairaaa">@official_samairaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_sanayaaa">@official_sanayaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_shizaaa">@official_shizaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_siyaaa">@official_siyaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_suhanaaa">@official_suhanaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_tazkiyaaa">@official_tazkiyaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_waniyaaa">@official_waniyaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_zainabbb">@official_zainabbb</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_aaliyahhh">@official_aaliyahhh</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_afveennn">@official_afveennn</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_amiraaa">@official_amiraaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_arissaaa">@official_arissaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_asmaaa">@official_asmaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_ayahhh">@official_ayahhh</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_azizaaa">@official_azizaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_faizaaa">@official_faizaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_farahhh">@official_farahhh</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_iffattt">@official_iffattt</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_irsaaa">@official_irsaaa</a>
-        <a class="btn" target="_blank" href="https://www.instagram.com/official_ismattt">@official_ismattt</a>
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* 1. SETUP / INPUT SCREEN */
+    .screen {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.4s ease;
+    }
+
+    .setup-box {
+      width: 90%;
+      max-width: 480px;
+      background: #0d0d0f;
+      border: 1px solid #1f1f23;
+      border-radius: 18px;
+      padding: 32px 26px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.85);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .setup-title {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      text-align: center;
+    }
+
+    .input-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    .addr-input {
+      width: 100%;
+      background: #050505;
+      border: 1px solid #2a2a2e;
+      color: #fff;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      padding: 14px 16px;
+      border-radius: 10px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .addr-input:focus {
+      border-color: #26a17b;
+    }
+
+    .network-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 6px;
+      width: fit-content;
+      margin: 0 auto;
+      background: #161618;
+      color: #666;
+      transition: all 0.2s ease;
+    }
+
+    .network-badge.bep20 {
+      background: rgba(243, 186, 47, 0.12);
+      color: #F3BA2F;
+      border: 1px solid #F3BA2F;
+    }
+
+    .network-badge.trc20 {
+      background: rgba(235, 0, 41, 0.12);
+      color: #ff334b;
+      border: 1px solid #ff334b;
+    }
+
+    /* Currency Chooser Row */
+    .currency-row {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      background: #050505;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #1c1c1f;
+    }
+
+    .currency-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #777;
+      font-weight: 600;
+    }
+
+    .currency-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .curr-btn {
+      background: #141416;
+      border: 1px solid #26262a;
+      color: #aaa;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .curr-btn.active {
+      background: rgba(38, 161, 123, 0.15);
+      border-color: #26a17b;
+      color: #26a17b;
+    }
+
+    .rate-setting {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: #888;
+      margin-top: 4px;
+      padding-top: 8px;
+      border-top: 1px dashed #202022;
+    }
+
+    .rate-input {
+      background: #111;
+      border: 1px solid #2a2a2e;
+      color: #fff;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      width: 70px;
+      padding: 4px 8px;
+      border-radius: 6px;
+      text-align: right;
+      outline: none;
+    }
+
+    .btn-start {
+      background: #26a17b;
+      color: #000;
+      font-size: 15px;
+      font-weight: 700;
+      border: none;
+      padding: 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 4px;
+      transition: opacity 0.2s, transform 0.1s;
+    }
+
+    .btn-start:hover { opacity: 0.9; }
+    .btn-start:disabled { opacity: 0.25; cursor: not-allowed; }
+
+    /* 2. LIVE FULLSCREEN TICKER */
+    #live-screen {
+      display: none;
+      background: #000;
+      cursor: none;
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .ticker-display {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 800;
+      letter-spacing: -2px;
+      font-size: clamp(52px, 12vw, 160px);
+      line-height: 1;
+      text-shadow: 0 0 55px rgba(255, 255, 255, 0.07);
+      pointer-events: none;
+    }
+
+    .currency-symbol {
+      color: #26a17b;
+      font-size: 0.55em;
+      margin-right: 14px;
+      font-weight: 700;
+      transform: translateY(-8%);
+      transition: color 0.4s ease;
+    }
+
+    /* ODOMETER */
+    .odometer {
+      display: flex;
+      align-items: baseline;
+      height: 1.15em;
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 82%, transparent 100%);
+      mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 82%, transparent 100%);
+    }
+
+    .digit-column {
+      position: relative;
+      display: inline-block;
+      width: 0.62em;
+      height: 1.15em;
+      overflow: hidden;
+    }
+
+    .digit-strip {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform;
+    }
+
+    .digit-strip span {
+      display: block;
+      height: 1.15em;
+      line-height: 1.15em;
+    }
+
+    .static-char {
+      display: inline-block;
+      height: 1.15em;
+      line-height: 1.15em;
+      width: 0.32em;
+      text-align: center;
+    }
+
+    /* Status Bar */
+    .footer-bar {
+      position: absolute;
+      bottom: 35px;
+      left: 50%;
+      transform: translateX(-50%) translateY(12px);
+      opacity: 0;
+      transition: opacity 0.35s ease, transform 0.35s ease;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .footer-bar.visible {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .footer-address {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: #888;
+      background: rgba(18, 18, 20, 0.95);
+      padding: 7px 18px;
+      border-radius: 30px;
+      border: 1px solid #2a2a2e;
+      letter-spacing: 0.5px;
+    }
+
+    .footer-hint {
+      font-size: 11px;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. SETUP / INPUT SCREEN -->
+  <div id="setup-screen" class="screen">
+    <div class="setup-box">
+      <div class="setup-title">USDT Live Tracker</div>
+
+      <div class="input-wrapper">
+        <input 
+          type="text" 
+          id="addressInput" 
+          class="addr-input" 
+          placeholder="Paste TRC20 (T...) or BEP20 (0x...) address" 
+          autocomplete="off" 
+          spellcheck="false"
+        />
+      </div>
+
+      <div id="networkBadge" class="network-badge">Waiting for valid address...</div>
+
+      <!-- Currency Chooser -->
+      <div class="currency-row">
+        <span class="currency-label">Default Currency</span>
+        <div class="currency-options">
+          <button type="button" class="curr-btn active" id="btnUsdt">USDT ($)</button>
+          <button type="button" class="curr-btn" id="btnInr">INR (₹)</button>
+        </div>
+        <div class="rate-setting">
+          <span>1 USDT =</span>
+          <div>
+            <span style="color:#aaa;">₹</span>
+            <input type="number" id="inrRateInput" class="rate-input" value="90.5" step="0.1" />
+          </div>
+        </div>
+      </div>
+
+      <button id="startBtn" class="btn-start" disabled>Start Live Tracker</button>
+    </div>
+  </div>
+
+  <!-- 2. FULLSCREEN PURE COUNTER SCREEN -->
+  <div id="live-screen" class="screen">
+    <div class="ticker-display">
+      <span class="currency-symbol" id="currSymbol">$</span>
+      <div class="odometer" id="odometerContainer"></div>
     </div>
 
-</body></html>
+    <div id="footerBar" class="footer-bar">
+      <span class="footer-address" id="displayAddress"></span>
+      <span class="footer-hint">Click anywhere to switch USDT / INR</span>
+    </div>
+  </div>
+
+  <script>
+    const setupScreen = document.getElementById('setup-screen');
+    const liveScreen = document.getElementById('live-screen');
+    const addressInput = document.getElementById('addressInput');
+    const networkBadge = document.getElementById('networkBadge');
+    const startBtn = document.getElementById('startBtn');
+    
+    const btnUsdt = document.getElementById('btnUsdt');
+    const btnInr = document.getElementById('btnInr');
+    const inrRateInput = document.getElementById('inrRateInput');
+    
+    const currSymbol = document.getElementById('currSymbol');
+    const odometerContainer = document.getElementById('odometerContainer');
+    const footerBar = document.getElementById('footerBar');
+    const displayAddress = document.getElementById('displayAddress');
+
+    let currentNetwork = null;
+    let targetAddress = '';
+    let selectedCurrency = 'USDT';
+    let inrRate = 90.5;
+    let rawUsdtBalance = 0.00;
+    let pollInterval = null;
+    let mouseTimer = null;
+
+    // Currency Switch
+    btnUsdt.addEventListener('click', () => {
+      selectedCurrency = 'USDT';
+      btnUsdt.classList.add('active');
+      btnInr.classList.remove('active');
+    });
+
+    btnInr.addEventListener('click', () => {
+      selectedCurrency = 'INR';
+      btnInr.classList.add('active');
+      btnUsdt.classList.remove('active');
+    });
+
+    // Detect Network Type
+    addressInput.addEventListener('input', (e) => {
+      const val = e.target.value.trim();
+      targetAddress = val;
+
+      if (/^0x[a-fA-F0-9]{40}$/.test(val)) {         currentNetwork = 'BEP20';         networkBadge.textContent = 'Detected: BNB Chain (BEP-20)';         networkBadge.className = 'network-badge bep20';         startBtn.disabled = false;       } else if (/^T[1-9A-HJ-NP-za-km-z]{33}$/.test(val)) {
+        currentNetwork = 'TRC20';
+        networkBadge.textContent = 'Detected: TRON Network (TRC-20)';
+        networkBadge.className = 'network-badge trc20';
+        startBtn.disabled = false;
+      } else {
+        currentNetwork = null;
+        networkBadge.textContent = val.length > 0 ? 'Invalid Address Format' : 'Waiting for valid address...';
+        networkBadge.className = 'network-badge';
+        startBtn.disabled = true;
+      }
+    });
+
+    // On-Chain Fetch Functions
+    async function fetchTrc20Balance(address) {
+      const usdtContract = 'TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t';
+      const url = `https://api.trongrid.io/v1/accounts/${address}`;
+      const res = await fetch(url);
+      if (!res.ok) throw new Error('TronGrid API error');
+      const data = await res.json();
+      
+      if (!data.data || data.data.length === 0) return 0;
+      
+      const trc20Balances = data.data[0].trc20 || [];
+      const match = trc20Balances.find(item => item[usdtContract] !== undefined);
+      if (match) {
+        // TRC20 USDT has 6 decimals
+        return Number(match[usdtContract]) / 1e6;
+      }
+      return 0;
+    }
+
+    async function fetchBep20Balance(address) {
+      const usdtContract = '0x55d398326f99059fF775485246999027B3197955';
+      const cleanAddress = address.toLowerCase().replace('0x', '').padStart(64, '0');
+      // balanceOf(address) function selector: 0x70a08231
+      const callData = '0x70a08231' + cleanAddress;
+      
+      const res = await fetch('https://binance.llamarpc.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          jsonrpc: '2.0',
+          id: 1,
+          method: 'eth_call',
+          params: [{ to: usdtContract, data: callData }, 'latest']
+        })
+      });
+
+      if (!res.ok) throw new Error('BSC RPC error');
+      const json = await res.json();
+      if (!json.result || json.result === '0x') return 0;
+
+      // BEP20 USDT has 18 decimals
+      const rawUnits = BigInt(json.result);
+      const integerPart = rawUnits / 1000000000000000000n;
+      const remainder = rawUnits % 1000000000000000000n;
+      return Number(integerPart) + (Number(remainder) / 1e18);
+    }
+
+    async function updateRealBalance() {
+      try {
+        let bal = 0;
+        if (currentNetwork === 'TRC20') {
+          bal = await fetchTrc20Balance(targetAddress);
+        } else if (currentNetwork === 'BEP20') {
+          bal = await fetchBep20Balance(targetAddress);
+        }
+        rawUsdtBalance = bal;
+        renderDisplay();
+      } catch (err) {
+        console.error('Fetch error:', err);
+      }
+    }
+
+    // Start Tracker
+    startBtn.addEventListener('click', async () => {
+      if (!currentNetwork) return;
+
+      inrRate = parseFloat(inrRateInput.value) || 90.5;
+
+      if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen().catch(() => {});
+      }
+
+      setupScreen.style.display = 'none';
+      liveScreen.style.display = 'flex';
+
+      displayAddress.textContent = `${currentNetwork} • ${targetAddress.slice(0, 6)}...${targetAddress.slice(-4)}`;
+      
+      // Initial render & fetch
+      renderDisplay();
+      await updateRealBalance();
+
+      // Poll real balance every 6 seconds to avoid RPC rate limiting
+      pollInterval = setInterval(updateRealBalance, 6000);
+    });
+
+    // Toggle USDT / INR on screen click
+    liveScreen.addEventListener('click', () => {
+      selectedCurrency = selectedCurrency === 'USDT' ? 'INR' : 'USDT';
+      renderDisplay();
+    });
+
+    function renderDisplay() {
+      let finalValue = rawUsdtBalance;
+      if (selectedCurrency === 'INR') {
+        finalValue = rawUsdtBalance * inrRate;
+        currSymbol.textContent = '₹';
+      } else {
+        currSymbol.textContent = '$';
+      }
+
+      const formattedStr = finalValue.toLocaleString('en-US', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      });
+
+      updateOdometer(formattedStr);
+    }
+
+    function updateOdometer(formattedStr) {
+      const chars = formattedStr.split('');
+      
+      if (odometerContainer.children.length !== chars.length) {
+        odometerContainer.innerHTML = '';
+        chars.forEach(() => {
+          const col = document.createElement('div');
+          odometerContainer.appendChild(col);
+        });
+      }
+
+      chars.forEach((char, idx) => {
+        const col = odometerContainer.children[idx];
+
+        if (char >= '0' && char <= '9') {
+          if (!col.classList.contains('digit-column')) {
+            col.className = 'digit-column';
+            let stripHtml = '<div class="digit-strip">';
+            for (let i = 0; i < 3; i++) {
+              for (let d = 0; d <= 9; d++) {
+                stripHtml += `<span>${d}</span>`;
+              }
+            }
+            stripHtml += '</div>';
+            col.innerHTML = stripHtml;
+          }
+
+          const targetDigit = parseInt(char, 10);
+          const strip = col.querySelector('.digit-strip');
+          const targetIndex = 10 + targetDigit;
+          const targetOffset = targetIndex * (100 / 30);
+
+          strip.style.transform = `translateY(-${targetOffset}%)`;
+        } else {
+          col.className = 'static-char';
+          col.innerHTML = `<span>${char}</span>`;
+        }
+      });
+    }
+
+    // Auto hide footer bar
+    liveScreen.addEventListener('mousemove', () => {
+      footerBar.classList.add('visible');
+      clearTimeout(mouseTimer);
+      mouseTimer = setTimeout(() => {
+        footerBar.classList.remove('visible');
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
